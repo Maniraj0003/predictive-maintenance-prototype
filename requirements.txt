@@ -1,0 +1,2 @@
+-r pdm/requirements.txt
+-r pdm/requirements_app.txt
