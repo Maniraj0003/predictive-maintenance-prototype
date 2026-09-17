@@ -1,0 +1,35 @@
+{
+  "n_rows": 13096,
+  "n_engines": 100,
+  "random_forest": {
+    "rul_mae_all_cycles": 12.449987610048693,
+    "rul_rmse_all_cycles": 17.148611208891833,
+    "rul_mae_last_cycle": 12.23952933356898,
+    "rul_rmse_last_cycle": 17.394446061510067
+  },
+  "xgboost": {
+    "rul_mae_all_cycles": 12.013147417262479,
+    "rul_rmse_all_cycles": 17.149286185846957,
+    "rul_mae_last_cycle": 12.338249745368957,
+    "rul_rmse_last_cycle": 17.566363890361302
+  },
+  "rul_mae_all_cycles": 12.449987610048693,
+  "rul_rmse_all_cycles": 17.148611208891833,
+  "rul_mae_last_cycle": 12.23952933356898,
+  "rul_rmse_last_cycle": 17.394446061510067,
+  "anomaly_accuracy": 0.9744960293219304,
+  "anomaly_precision": 0.2552204176334107,
+  "anomaly_recall": 0.8943089430894309,
+  "anomaly_f1": 0.3971119133574007,
+  "confusion_matrix": [
+    [
+      12652,
+      321
+    ],
+    [
+      13,
+      110
+    ]
+  ],
+  "note": "Evaluated on data/test_FD001.txt + RUL_FD001.txt, which the models never saw during training."
+}

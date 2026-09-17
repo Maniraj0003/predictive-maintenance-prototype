@@ -1,0 +1,56 @@
+{
+  "feature_cols": [
+    "op1",
+    "op2",
+    "s2",
+    "s3",
+    "s4",
+    "s7",
+    "s8",
+    "s9",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s17",
+    "s20",
+    "s21"
+  ],
+  "anomaly_threshold": 0.012454979820827635,
+  "rul_cap": 125,
+  "anomaly_label_rul": 20,
+  "bottleneck_dim": 5,
+  "evaluation": {
+    "methodology": "Metrics below come from 20 engines held out entirely during training (unit-level split, not row-level, to avoid leakage between neighbouring cycles of the same engine). Random Forest and XGBoost were trained on the identical split for a fair comparison.",
+    "held_out_validation": {
+      "n_rows": 4070,
+      "n_engines": 20,
+      "rul_mae": 12.47894394889994,
+      "rul_rmse": 17.101885033879515,
+      "random_forest": {
+        "rul_mae": 12.47894394889994,
+        "rul_rmse": 17.101885033879515
+      },
+      "xgboost": {
+        "rul_mae": 12.169513687645187,
+        "rul_rmse": 16.936867246379173
+      },
+      "anomaly_accuracy": 0.9007371007371008,
+      "anomaly_precision": 0.5233918128654971,
+      "anomaly_recall": 0.4261904761904762,
+      "anomaly_f1": 0.46981627296587924,
+      "confusion_matrix": [
+        [
+          3487,
+          163
+        ],
+        [
+          241,
+          179
+        ]
+      ]
+    }
+  },
+  "val_mae": 12.47894394889994
+}

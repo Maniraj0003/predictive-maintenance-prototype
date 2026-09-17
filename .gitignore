@@ -1,0 +1,34 @@
+# Python virtual envs
+.venv/
+.venv312/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Editor / OS
+.vscode/
+.DS_Store
+.idea/
+
+# Jupyter / test caches
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local runtime output
+.streamlit/
+*.log
+
+# Project build output
+*.joblib
+*.npz
+
+# Keep tracked model artifacts if needed
+!pdm/models/
+!pdm/models/*.joblib
+!pdm/models/*.npz
+!pdm/models/*.json
+!pdm/models/*.csv
