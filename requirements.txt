@@ -1,2 +1,11 @@
--r pdm/requirements.txt
--r pdm/requirements_app.txt
+fastapi==0.115.0
+uvicorn==0.30.6
+scikit-learn==1.5.2
+xgboost==2.1.1
+pandas==2.2.2
+numpy==1.26.4
+joblib==1.4.2
+pydantic==2.9.2
+streamlit==1.56.0
+plotly==7.1.0
+requests==2.34.2
